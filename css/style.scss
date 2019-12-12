@@ -1,0 +1,40 @@
+$main-color: #00266D;
+$secondary-color:#FF9F17;
+
+a{
+    transition: .2s;
+}
+.top-nav{
+    background:$main-color; 
+    ul{
+        margin:0;
+        padding:0;
+        li{
+            display: inline-block;
+            list-style-type: none;
+            padding: 10px 0px  10px 10px;
+            color: #fff;
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.main-nav{
+    background: #fff !important;
+    li{
+        &.show{
+            .nav-link{
+                color: $secondary-color !important;
+            }
+        }
+    }
+    .nav-link{
+        color: $main-color !important;
+        &:hover{
+            color: $secondary-color !important;
+        }
+    }
+}
